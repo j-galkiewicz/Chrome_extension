@@ -1,2 +1,2 @@
-# Chrome_extention
+# Chrome_extension
 A simple chrome extension
