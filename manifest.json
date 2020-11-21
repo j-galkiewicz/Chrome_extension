@@ -1,0 +1,19 @@
+{
+    "name": "Chrome extension",
+    "version": "1.0",
+    "description": "Building a chrome extension!",
+    "manifest_version": 2,
+
+    "incognito": "split", 
+  
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    
+    "permissions": [
+       "activeTab"
+     ],
+  "icons": {
+      "icon": "icon.png"
+      }
+  }
