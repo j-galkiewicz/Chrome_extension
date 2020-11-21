@@ -7,16 +7,18 @@ document.getElementById("set-button").addEventListener('click', openSet);
 var userNickName = localStorage.getItem('receivedNickName');
 
 function saveNickName() {
-    localStorage.setItem('receivedNickName', userNickName); //1st argument is a keyword to get the info, 2nd argument - info that has to be rememeber 
-    if(userNickName == null) {
-        userNickName = "buddy";
-    }                                            
+    localStorage.setItem('receivedNickName', userNickName); //1st argument is a keyword to get the info, 2nd argument - info that has to be rememeber                                          
 }
 
+if(userNickName == null) {
+    userNickName = "buddy";
+}  
+  
 function changeNickName() {
     userNickName = document.getElementById("nickname-input").value;
-    saveNickName;
+    saveNickName;  
 }
+
 
 document.getElementById("nickname-form").addEventListener('submit', function(e) {
     e.preventDefault();
@@ -24,7 +26,7 @@ document.getElementById("nickname-form").addEventListener('submit', function(e) 
 })
 
 function getHelloMessage() {
-    document.getElementById("hello").innerHTML = `Hello, ${userNickName}. In case you forgot - you rock!`;
+    document.getElementById("hello").innerHTML = `Hello ${userNickName}. In case you forgot - keep smiling!`;
 }
 
 getHelloMessage();

@@ -1,3 +1,12 @@
+html {
+    height: 100%;
+}
+ 
+body {
+    background-color: #c670ca;
+   background-image: linear-gradient(45deg, #c670ca 0%, #25a5c8 52%, #20e275 90%);
+}
+
 .set {
     display: flex;
     flex-direction: row;
@@ -22,13 +31,28 @@ button {
     height: 30px;
     width: 80px;
     background: none;
-    color: crimson;
-    border: 1px solid #313131;
+    color: floralwhite;
+    border: 1px solid black;
     border-radius: 50px;
     font-size: 12px;
     cursor: pointer;
 }
 
+
 form {
     padding-top: 20px;
 }
+
+.hello-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hello {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4rem;
+    color: floralwhite;
+}
+
+
