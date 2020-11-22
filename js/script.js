@@ -28,6 +28,8 @@ function saveNickName() {
   
 function changeNickName() {
     if(userNickName = document.getElementById("nickname-input").value == "") {
+        userNickName = "stranger";
+    } else if(userNickName = document.getElementById("nickname-input").value == "A") { 
         userNickName = "buddy";
     } else {
         userNickName = document.getElementById("nickname-input").value;
@@ -37,11 +39,28 @@ function changeNickName() {
 
 }
 
+var text;
+switch (new Date().getDay()) {
+    default: 
+      text = "Looking forward to the Weekend";
+      break;
+    case 6:
+      text = "Today is Saturday - the Dog Day";
+      break; 
+    case 0:
+      text = "Today is Sunday - the Dog Day";
+  }
+document.getElementById("day").innerHTML = text;
+
 function getHelloMessage() {
     document.getElementById("hello").innerHTML = `Hello, ${userNickName}. In case you forgot - you're a good boy 🐶`;
     openSet();
 }
 
+function getHelloMessage2() {
+    document.getElementById("hello").innerHTML = `Czesc, ${userNickName}. In case you forgot - you're a good boy 🐶`;
+    openSet();
+}
 
 document.getElementById("nickname-form").addEventListener('submit', function(e) {
     e.preventDefault();

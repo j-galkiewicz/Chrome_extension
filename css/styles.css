@@ -22,7 +22,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(167,45,253,1) 100%
 
 .set-close {
     display: none;
-    transform: 2s;
+    transform: 1s;
 }
 
 input {
@@ -63,4 +63,13 @@ form {
     position: flex;
 }
 
-
+footer {
+    position: fixed;
+    font-size: medium;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(34,193,195) transparent 50%;
+    color: white;
+    text-align: center;
+}
