@@ -38,7 +38,7 @@ function changeNickName() {
 }
 
 function getHelloMessage() {
-    document.getElementById("hello").innerHTML = `Hello ${userNickName}. In case you forgot - you're a good boy 🐶`;
+    document.getElementById("hello").innerHTML = `Hello, ${userNickName}. In case you forgot - you're a good boy 🐶`;
     openSet();
 }
 
