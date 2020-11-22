@@ -42,7 +42,7 @@ function changeNickName() {
 var text;
 switch (new Date().getDay()) {
     default: 
-      text = "Looking forward to the Weekend";
+      text = "Every dog has his dog day";
       break;
     case 6:
       text = "Today is Saturday - the Dog Day";
